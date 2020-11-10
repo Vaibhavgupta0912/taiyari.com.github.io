@@ -1,0 +1,497 @@
+<!doctype html>
+<html>
+<head>
+ 
+		<title>java oops</title>
+                    
+
+
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+ <link rel="stylesheet" href="CSS/java.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+	
+	</head>
+	<body>
+     
+        <nav id="navbar">
+            <ul>
+             
+              <p id="brand"><span>ta</span>iyari.<span>co</span>m</p>
+                
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="java1.html">Java</a></li>
+                <li class="item"><a href="python.html">Python</a></li>
+                <li class="item"><a href="dbms.html">DBMS</a></li>
+                <li class="item"><a href="pro.html">Programming</a></li>
+                <!-- <li class="item"><a href="#">MongoDB</a></li>
+                <li class="item"><a href="#">MySql</a></li> -->
+                
+                
+        
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar">
+          <header>Topics</header>
+          <ul>
+            <li><a href="java1.html"><i class=""></i>basic quesion</a></li>
+            <li><a href="java2.html"><i class=""></i>oop-concepts</a></li>
+            <li><a href="java2.html"><i class=""></i>constructor</a></li>
+            <li><a href="java2.html"><i class=""></i>static keyword</a></li>
+            <li><a href="java2.html"><i class=""></i>inheritance</a></li>
+            <li><a href="java2.html"><i class=""></i>method overloading</a></li>
+            <li><a href="java2.html"><i class=""></i>method overriding</a></li>
+            <li><a href="java2.html"><i class=""></i>final keyword</a></li>
+            <li><a href="java3.html"><i class=""></i>Polymorphism</a></li>
+            <li><a href="java3.html"><i class=""></i>Abstraction</a></li>
+            <li><a href="java3.html"><i class=""></i>Exception Handling</a></li>
+            <li><a href="java3.html"><i class=""></i>Garbage Collection</a></li>
+            <li><a href="java3.html"><i class=""></i>Serialization</a></li>
+            <li><a href="java3.html"><i class=""></i>Serialization</a></li>
+            <li><a href="java3.html"><i class=""></i>Serialization</a></li>
+           
+          </ul>
+        </div>
+
+
+
+    <div class="theory">
+		<div class="slide hi-slide">
+		  <div class="hi-prev "></div>
+			<div class="hi-next "></div>
+			<ul>
+				<li>
+				<img src="img/java1.jpg" alt="Img 1" /></li>
+        <li><img src="img/python2.jpg" alt="Img 2" /></li>
+        <li><img src="img/js3.jpg" alt="Img 2" /></li>
+        <li><img src="img/node7.jpeg" alt="Img 2" /></li>
+        <li><img src="img/mon4.jpeg" alt="Img 2" /></li>
+        <!-- <li><img src="img/c++6.jpg" alt="Img 2" /></li> -->
+        <li><img src="img/ag8.png" alt="Img 2" /></li>
+        <li><img src="img/dock9.jpeg" alt="Img 2" /></li>
+        <li><img src="img/red10.png" alt="Img 2" /></li>
+        <li><img src="(img/sql5.gif" alt="Img 2" /></li>
+			</ul>
+		</div>
+	</div>
+        
+        
+        <section id="data">
+          <h1 id="demo" class="animate__animated animate__zoomIn" style="animation-delay: 1s;">OOPs Concepts: Initial OOPs Interview Questions</h1>
+          <br>
+          <p id="answer">There is given more than 50 OOPs (Object-Oriented Programming and System) interview questions. However, they have been categorized in many sections such as constructor interview questions, static interview questions, Inheritance Interview questions, Abstraction interview question, Polymorphism interview questions, etc. for better understanding.</p>
+          <h2 id="question"> 13)   What is an object?</h2>
+          <p id="answer">The Object is the real-time entity having some state and behavior. In Java, Object is an instance of the class having the instance variables as the state of the object and the methods as the behavior of the object. The object of a class can be created by using the new keyword.</p>
+
+          <h2 id="question">14)   What is the difference between an object-oriented programming language and object-based programming language?</h2>
+          <p id="answer">There are the following basic differences between the object-oriented language and object-based language..
+            <ul id="subpoints">
+                <li >Object-oriented languages follow all the concepts of OOPs whereas, the object-based language doesn't follow all the concepts of OOPs like inheritance and polymorphism.</li>
+                <li >Object-oriented languages do not have the inbuilt objects whereas Object-based languages have the inbuilt objects, for example, JavaScript has window object.</li>
+                <li >Examples of object-oriented programming are Java, C#, Smalltalk, etc. whereas the examples of object-based languages are JavaScript, VBScript, etc.</li>
+              </ul>
+          </p>
+
+          <h1 id="demo">Core Java - OOPs Concepts: Constructor Interview Questions</h1>
+          <h2 id="question">15)   What is the constructor?</h2>
+            <p id="answer"> The constructor can be defined as the special type of method that is used to initialize the state of an object. It is invoked when the class is instantiated, and the memory is allocated for the object. Every time, an object is created using the new keyword, the default constructor of the class is called. The name of the constructor must be similar to the class name. The constructor must not have an explicit return type.</p>
+
+            <h2 id="question">16)   What do you understand by Java virtual machine?</h2>
+              <p id="answer"> Based on the parameters passed in the constructors, there are two types of constructors in Java 
+              </p>
+              <ul id="subpoints">
+               <br> <li ><b>Default Constructor:</b>  default constructor is the one which does not accept any value. The default constructor is mainly used to initialize the instance variable with the default values. It can also be used for performing some useful task on object creation. A default constructor is invoked implicitly by the compiler if there is no constructor defined in the class.</li>
+               <br> <li ><b>Parameterized Constructor:</b>  The parameterized constructor is the one which can initialize the instance variables with the given values. In other words, we can say that the constructors which can accept the arguments are called parameterized constructors.</li>
+               <img src="img/java-constructor.png" alt="" style="margin-top: 20px;">
+              </ul>
+
+            <h2 id="question">17)   What is the purpose of a default constructor?</h2>
+                <p id="answer">The purpose of the default constructor is to assign the default value to the objects. The java compiler creates a default constructor implicitly if there is no constructor in the class.
+              </p>
+              <div class="program">
+                class Student3{  <br>
+                    int id; <br> 
+                    String name; <br> 
+                      
+                    void display(){System.out.println(id+" "+name);}  <br>
+                      
+                    public static void main(String args[]){    <br>
+                    Student3 s1=new Student3();  <br>
+                    Student3 s2=new Student3();  <br>
+                    s1.display();  <br>
+                    s2.display();  <br>
+                    }  <br>
+                    }  <br>
+              </div>
+              <p id="answer"> The output of the above code: </p>
+          <div class="result">
+            0 null
+            <br> 0 null
+          </div>
+          <br>
+          <p id="answer"> <b>Explanation:</b> In the above class, you are not creating any constructor, so compiler provides you a default constructor. Here 0 and null values are provided by default constructor.</p>
+          <img src="img/default-constructor1.png" alt="" style="margin-top: 20px;">
+              
+            <h2 id="question">18)   Does constructor return any value?</h2>
+            <p id="answer"> yes, The constructor implicitly returns the current instance of the class (You can't use an explicit return type with the constructor).</p>
+
+            <h2 id="question">19)   Is constructor inherited?</h2>
+              <p id="answer"> No, The constructor is not inherited.</p>
+             
+           <h2 id="question">20)   What are the differences between the constructors and methods?</h2>
+           <img src="img/constructor-vs-method-in-java.jpg" alt="" style="margin-top: 20px;">   
+
+           <h1 id="demo">Core Java - OOPs Concepts: static keyword Interview Questions</h1>
+              
+          <h2 id="question">21)  What is the static method?</h2>
+                  <p id="answer"> 
+                      <ul id="subpoints">
+                          <li>A static method belongs to the class rather than the object.</li>
+                          <li>There is no need to create the object to call the static methods.</li>
+                          <li>A static method can access and change the value of the static variable.</li>
+                      </ul>
+                  </p>
+                
+
+                  
+          <h2 id="question">22)   What is the static variables?</h3>
+                    <p id="answer"> The static variable is used to refer to the common property of all objects (that is not unique for each object), e.g., The company name of employees, college name of students, etc. Static variable gets memory only once in the class area at the time of class loading. Using a static variable makes your program more memory efficient (it saves memory). Static variable belongs to the class rather than the object
+                      <br><br>
+                      For example, In the class simulating the collection of the students in a college, the name of the college is the common attribute to all the students. Therefore, the college name will be defined as static</p>
+          
+
+          <h2 id="question">23)   Can we override the static methods?</h2>       
+          <p id="answer">No, we can't override static methods.  </p>
+
+          <h2 id="question">24)   Can we declare the static variables and methods in an abstract class?</h2>
+          <p id="answer"> Yes, we can declare static variables and methods in an abstract method. As we know that there is no requirement to make the object to access the static context, therefore, we can access the static context declared inside the abstract class by using the name of the abstract class.</p>
+         
+          <h1 id="demo"> Core Java - OOPs Concepts: Inheritance Interview Questions</h1>
+
+          <h2 id="question">25)    What is this keyword in java?</h2>
+          <p id="answer"> The this keyword is a reference variable that refers to the current object. There are the various uses of this keyword in Java. It can be used to refer to current class properties such as instance methods, variable, constructors, etc. It can also be passed as an argument into the methods or constructors. It can also be returned from the method as the current class instance. </p>
+
+          <h2 id="question">26)   How can constructor chaining be done using this keyword?</h2> 
+          <p id="answer">Constructor chaining enables us to call one constructor from another constructor of the class with respect to the current class object. We can use this keyword to perform constructor chaining within the same class.</p>
+        
+          <h2 id="question">27)   What is the Inheritance?</h2>
+          <p id="answer"> Inheritance is a mechanism by which one object acquires all the properties and behavior of another object of another class. It is used for Code Reusability and Method Overriding. The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also. Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+              <br> <br>
+              There are five types of inheritance in Java.
+              <ul id="subpoints">
+                  <li>Single-level inheritance</li>
+                  <li>Multi-level inheritance</li>
+                  <li>Multiple Inheritance</li>
+                  <li>Hierarchical Inheritance</li>
+                  <li>Hybrid Inheritance</li>
+              </ul>
+             </p>
+
+            <h2 id="question">28) Why is Inheritance used in Java?</h2>
+            <p id="answer">There are various advantages of using inheritance in Java that is given below.
+                <ul id="subpoints">
+                    <li>Inheritance provides code reusability. The derived class does not need to redefine the method of base class unless it needs to provide the specific implementation of the method.</li><br>
+                    <li>Runtime polymorphism cannot be achieved without using inheritance.</li><br>
+                    <li>We can simulate the inheritance of classes with the real-time objects which makes OOPs more realistic.</li><br>
+                    <li>Inheritance provides data hiding. The base class can hide some data from the derived class by making it private.</li><br>
+                    <li>Method overriding cannot be achieved without inheritance. By method overriding, we can give a specific implementation of some basic method contained by the base class.</li>
+                </ul>
+            </p>
+
+            <h2 id="question">29)   Why is multiple inheritance not supported in java?
+            </h2>
+            <p id="answer">To reduce the complexity and simplify the language, multiple inheritance is not supported in java. Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. If A and B classes have the same method and you call it from child class object, there will be ambiguity to call the method of A or B class. 
+                <br><br>
+                Since the compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes. So whether you have the same method or different, there will be a compile time error.
+            </p>
+            <div class="program">
+                class A{  <br>
+                    void msg(){System.out.println("Hello");} <br> 
+                    }  <br>
+                    class B{  <br>
+                    void msg(){System.out.println("Welcome");}  <br>
+                    }  <br>
+                    class C extends A,B{//suppose if it were  <br>
+                       <br>
+                     Public Static void main(String args[]){  br
+                       C obj=new C();  br
+                       obj.msg();//Now which msg() method would be invoked?  br
+                    }  br
+                    }  <br>
+              </div>
+              <p id="answer"> The output of the above code: </p>
+          <div class="result">
+            Compile Time Error
+          </div>
+          <br>
+
+            <h2 id="question">30)   Why does Java not support pointers?
+            </h2>
+            <p id="answer">The pointer is a variable that refers to the memory address. They are not used in Java because they are unsafe(unsecured) and complex to understand.</p>
+
+            <h2 id="question">31)   What is super in java?
+            </h2>
+            <p id="answer">The super keyword in Java is a reference variable that is used to refer to the immediate parent class object. Whenever you create the instance of the subclass, an instance of the parent class is created implicitly which is referred by super reference variable. The super() is called in the class constructor implicitly by the compiler if there is no super or this.</p>
+            <div class="program">
+                class Animal{  <br>
+                    Animal(){System.out.println("animal is created");}  <br>
+                    }  <br>
+                    class Dog extends Animal{  <br>
+                    Dog(){  <br>
+                    System.out.println("dog is created"); <br> 
+                    }  <br>
+                    }  <br>
+                    class TestSuper4{  <br>
+                    public static void main(String args[]){  <br>
+                    Dog d=new Dog();  <br>
+                    }  <br>
+                    }   <br>
+              </div>
+              <p id="answer"> The output of the above code: </p>
+          <div class="result">
+            animal is created       
+            <br>
+            dog is created
+          </div>
+          <br>
+
+            <h2 id="question">32)   What are the differences between this and super keyword?
+            </h2>
+            <p id="answer">There are the following differences between this and super keyword.
+                <ul id="subpoints">
+                    <li>The super keyword always points to the parent class contexts whereas this keyword always points to the current class context.</li> <br>
+                     <li>The super keyword is primarily used for initializing the base class variables within the derived class constructor whereas this keyword primarily used to differentiate between local and instance variables when passed in the class constructor.</li> <br>
+                     <li>The super and this must be the first statement inside constructor otherwise the compiler will throw an error.</li>
+                </ul>
+            </p>
+
+
+            <h1 id="demo">Core Java - OOPs Concepts: Method Overloading Interview Questions</h1>
+            <h2 id="question">33)   What is method overloading?
+            </h2>
+            <p id="answer">Method overloading is the polymorphism technique which allows us to create multiple methods with the same name but different signature. We can achieve method overloading in two ways.
+              <ul id="subpoints">
+                <li>Changing the number of arguments</li>
+                <li>Changing the return type</li>
+              </ul></p>
+              <p id="answer"> Method overloading increases the readability of the program. Method overloading is performed to figure out the program quickly.</p>
+            
+
+            <h2 id="question">34)   Why is method overloading not possible by changing the return type in java?
+            </h2>
+            <p id="answer">In Java, method overloading is not possible by changing the return type of the program due to avoid the ambiguity.</p>
+            <div class="program">
+              class Adder{  <br>
+                static int add(int a,int b){return a+b;}  <br>
+                static double add(int a,int b){return a+b;}  <br>
+                }  <br>
+                class TestOverloading3{  <br>
+                public static void main(String[] args){  <br>
+                System.out.println(Adder.add(11,11));//ambiguity  <br>
+                }}   <br>
+            </div>
+            <p id="answer"> The output of the above code: </p>
+        <div class="result">
+          Compile Time Error: method add(int, int) is already defined in class Adder
+        </div>
+        <br>
+        <h2 id="question">35)   Can we overload the methods by making them static?
+        </h2>
+        <p id="answer">No, We cannot overload the methods by just applying the static keyword to them(number of parameters and types are the same). Consider the following example.</p>
+        <div class="program">
+          public class Animal  <br>
+          {  <br>
+              void consume(int a)  <br>
+              {  <br>
+                  System.out.println(a+" consumed!!");  <br>
+              }  <br>
+              static void consume(int a)  <br>
+              {  <br>
+                  System.out.println("consumed static "+a);  <br>
+              }  <br>
+              public static void main (String args[])  <br>
+              {  <br>
+                  Animal a = new Animal();  <br>
+                  a.consume(10);  <br>
+                  Animal.consume(20);  <br>
+              }  <br>
+          }    <br>
+        </div>
+        <p id="answer"> The output of the above code: </p>
+    <div class="result">
+      Animal.java:7: error: method consume(int) is already defined in class Animal <br>
+    static void consume(int a) <br> <br>
+                
+Animal.java:15: error: non-static method consume(int) cannot be referenced from a static context <br> <br>
+
+        Animal.consume(20);<br> <br>
+              
+2 errors <br>
+    </div>
+    <br>
+
+        <h2 id="question">36)   Can we overload the main() method?
+        </h2>
+        <p id="answer">Yes, we can have any number of main methods in a Java program by using method overloading.</p>
+
+
+        <h1 id="demo">Core Java - OOPs Concepts: Method Overriding Interview Questions</h1>
+        
+
+        <h2 id="question">37)   What is method overriding:
+        </h2>
+        <p id="answer">If a subclass provides a specific implementation of a method that is already provided by its parent class, it is known as Method Overriding. It is used for runtime polymorphism and to implement the interface methods. <br><br>
+        <b> Rules for Method overriding:</b> 
+        <ul id="subpoints">
+          <li>The method must have the same name as in the parent class.</li>
+          <li>The method must have the same signature as in the parent class.</li>
+          <li>Two classes must have an IS-A relationship between them.</li>
+        </ul>
+        </p>
+        <h2 id="question">38)   Can we override the static method?
+        </h2>
+        <p id="answer">No, you can't override the static method because they are the part of the class, not the object.</p>
+        <h2 id="question">39)   Why can we not override static method?
+        </h2>
+        <p id="answer">It is because the static method is the part of the class, and it is bound with class whereas instance method is bound with the object, and static gets memory in class area, and instance gets memory in a heap.</p>
+        <h2 id="question">40)   Can we override the private methods?
+        </h2>
+        <p id="answer">No, we cannot override the private methods because the scope of private methods is limited to the class and we cannot access them outside of the class.</p>
+        <h2 id="question">41)   Can we change the scope of the overridden method in the subclass?
+        </h2>
+        <p id="answer">Yes, we can change the scope of the overridden method in the subclass. However, we must notice that we cannot decrease the accessibility of the method. The following point must be taken care of while changing the accessibility of the method.
+          <ul id="subpoints">
+            <li>The private can be changed to protected, public, or default.</li>
+            <li>The protected can be changed to public or default.</li>
+            <li>The default can be changed to public.</li>
+            <li>The public will always remain public.</li>
+          </ul>
+        </p>
+
+        <h2 id="question">42)  Difference between method Overloading and Overriding. 
+        </h2>
+        <p id="answer">
+          <table id="t01">
+            <tr>
+              <th>Method Overloading</th>
+              <th>Method Overriding</th> 
+            
+            </tr>
+            <tr>
+              <td>Method overloading increases the readability of the program.</td>
+              <td>Method overriding provides the specific implementation of the method that is already provided by its superclass.</td>
+          
+            </tr>
+            <tr>
+              <td>Method overloading occurs within the class.</td>
+              <td>Method overriding occurs in two classes that have IS-A relationship between them.</td>
+            </tr>
+            <tr>
+              <td>In this case, the parameters must be different.</td>
+              <td>In this case, the parameters must be the same.</td>
+            </tr>
+          </table>
+        </p>
+        <h2 id="question">43)   Can we modify the throws clause of the superclass method while overriding it in the subclass?
+        </h2>
+        <p id="answer">Yes, we can modify the throws clause of the superclass method while overriding it in the subclass. However, there are some rules which are to be followed while overriding in case of exception handling.
+          <ul id="subpoints">
+            <li>If the superclass method does not declare an exception, subclass overridden method cannot declare the checked exception, but it can declare the unchecked exception.</li>
+            <li>If the superclass method declares an exception, subclass overridden method can declare same, subclass exception or no exception but cannot declare parent exception.
+            </li>
+          </ul>
+        </p>
+        <h1 id="demo">Core Java - OOPs Concepts: final keyword Interview Questions</h1>
+        <h2 id="question">44)    What is the final variable?
+        </h2>
+        <p id="answer">In Java, the final variable is used to restrict the user from updating it. If we initialize the final variable, we can't change its value. In other words, we can say that the final variable once assigned to a value, can never be changed after that. The final variable which is not assigned to any value can only be assigned through the class constructor.</p>
+        <img src="img/final.jpg" alt="" style="margin-top: 20px;"> 
+        <div class="program">
+          class Bike9{  <br>
+            final int speedlimit=90;//final variable  <br>
+            void run(){  <br>
+             speedlimit=400;  <br>
+            }  <br>
+            public static void main(String args[]){  <br>
+            Bike9 obj=new  Bike9();  <br>
+            obj.run();  <br>
+            }  <br>
+           }//end of class  <br>
+        </div>
+
+    <div class="result">
+      Output:Compile Time Error
+    </div>
+    <br>
+
+        <h2 id="question">45)  What is the final method?
+        </h2>
+        <p id="answer">If we change any method to a final method, we can't override it.</p>
+        <div class="program">
+          class Bike{  <br>
+            final void run(){System.out.println("running");}  <br>
+          }  <br>
+               <br>
+          class Honda extends Bike{  <br>
+             void run(){System.out.println("running safely with 100kmph");}  <br>
+               <br>
+             public static void main(String args[]){  <br>
+<br>
+             Honda honda= new Honda();  <br>
+             honda.run();  <br>
+             }  <br>
+          }    <br>
+        </div>
+      
+    <div class="result">
+      Output:Compile Time Error
+    </div>
+    <br>
+
+        <h2 id="question">46)   Can we initialize the final blank variable?
+        </h2>
+        <p id="answer">Yes, if it is not static, we can initialize it in the constructor. If it is static blank final variable, it can be initialized only in the static block.</p>
+        <h2 id="question">47)   Can you declare the main method as final?
+        </h2>
+        <p id="answer">Yes, We can declare the main method as public static final void main(String[] args){}.</p>
+        <h2 id="question">48)   Can we declare a constructor as final?
+        </h2>
+        <p id="answer">The constructor can never be declared as final because it is never inherited. Constructors are not ordinary methods; therefore, there is no sense to declare constructors as final. However, if you try to do so, The compiler will throw an error.</p>
+        <h2 id="question">49)   Can we declare an interface as final?
+        </h2>
+        <p id="answer">No, we cannot declare an interface as final because the interface must be implemented by some class to provide its definition. Therefore, there is no sense to make an interface final. However, if you try to do so, the compiler will show an error.</p>
+        <h2 id="question">50)   What is the difference between the final method and abstract method?
+        </h2>
+        <p id="answer">The main difference between the final method and abstract method is that the abstract method cannot be final as we need to override them in the subclass to give its definition.</p>
+       
+
+        </section>
+
+          <div class="center">
+            <div class="pagination">
+           
+            <a href="java1.html">1</a>
+            <a href="java2.html">2</a>
+            <a href="java3.html">3</a>
+          
+       
+            </div>
+          </div>
+
+          <footer>
+            <div class="center">
+                Copyright &copy; www.taiyari.com. All right reserved
+            </div>
+        </footer>
+		
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hislide.js" ></script>
+		<script>
+			$('.slide').hiSlide();
+        </script>
+        
+	</body>
+    
+</html>

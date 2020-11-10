@@ -1,0 +1,461 @@
+<!doctype html>
+<html>
+<head>
+ 
+		<title>programming</title>
+                    
+
+
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+ <link rel="stylesheet" href="CSS/java.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	
+	</head>
+	<body>
+     
+        <nav id="navbar">
+            <ul>
+             
+              <p id="brand"><span>ta</span>iyari.<span>co</span>m</p>
+                
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="java1.html">Java</a></li>
+                <li class="item"><a href="python.html">Python</a></li>
+                <li class="item"><a href="dbms.html">DBMS</a></li>
+                <li class="item"><a href="pro.html">Programming</a></li>
+                <!-- <li class="item"><a href="#">MongoDB</a></li>
+                <li class="item"><a href="#">MySql</a></li> -->
+               
+                
+        
+            </ul>
+            
+        </nav>
+        
+          <div class="sidebar">
+            <header>Topics</header>
+            <ul>
+              <li><a href="java1.html"><i class=""></i>Pallindrom</a></li>
+              <li><a href="java2.html"><i class=""></i>Anagram</a></li>
+              <li><a href="java2.html"><i class=""></i>Factorial</a></li>
+              <li><a href="java2.html"><i class=""></i>Armstrong</a></li>
+              <li><a href="java2.html"><i class=""></i>Prime</a></li>
+              <li><a href="java2.html"><i class=""></i>Count characters</a></li>
+              <li><a href="java2.html"><i class=""></i>Count vowels</a></li>
+              <li><a href="java2.html"><i class=""></i>Count consonants</a></li>
+              <li><a href="java3.html"><i class=""></i>white spaces</a></li>
+              <li><a href="java3.html"><i class=""></i>Swaping</a></li>
+              <li><a href="java3.html"><i class=""></i>Individual Characters</a></li>
+              <li><a href="java3.html"><i class=""></i>Duplicate characters</a></li>
+              <li><a href="java3.html"><i class=""></i>Frequency</a></li>
+              <li><a href="java3.html"><i class=""></i>Reverse</a></li>
+              <li><a href="java3.html"><i class=""></i>Lower Case</a></li>
+           
+            </ul>
+          </div>
+
+
+
+    <div class="theory">
+		<div class="slide hi-slide">
+		  <div class="hi-prev "></div>
+			<div class="hi-next "></div>
+			<ul>
+				<li>
+				<img src="img/java1.jpg" alt="Img 1" /></li>
+        <li><img src="img/python2.jpg" alt="Img 2" /></li>
+        <li><img src="img/js3.jpg" alt="Img 2" /></li>
+        <li><img src="img/node7.jpeg" alt="Img 2" /></li>
+        <li><img src="img/mon4.jpeg" alt="Img 2" /></li>
+        <!-- <li><img src="img/c++6.jpg" alt="Img 2" /></li> -->
+        <li><img src="img/ag8.png" alt="Img 2" /></li>
+        <li><img src="img/dock9.jpeg" alt="Img 2" /></li>
+        <li><img src="img/red10.png" alt="Img 2" /></li>
+        <li><img src="img/sql5.gif" alt="Img 2" /></li>
+			</ul>
+		</div>
+	</div>
+        
+        
+        <section id="data">
+          <h1 id="demo" class="animate__animated animate__zoomIn" style="animation-delay: 1s;">Java Basic Programs</h1>
+          
+          <h2 id="question">1)   Write a java program for string which is Pallindrom or not.</h2>
+          <div class="program">
+
+            public class Pallindrom {  <br>
+                public static void main(String args[])  <br>
+                {  <br>
+                    String x="too Hot to hot";  <br>
+                    x=x.replace(" ","");  <br>
+                    x=x.toUpperCase();    <br>
+                    char y[]=x.toCharArray();  <br>
+                    int size=y.length;    <br>
+                    char a[]=new char[size];  <br>
+                      <br>
+                    int i= 0;  <br>   
+                    while(i!=size)   <br>
+                    {
+                        a[size-1-i]=y[i];  <br>
+                        ++i;  <br>
+                    } <br> 
+                    i=0;  <br>
+                    while(i!=size)   <br>
+                    {  <br>
+                        if(a[i]!=y[i])   <br>
+                        {   <br>
+                            System.out.println("Not Pallindrom");  <br>
+                            System.exit(0);  <br>
+                        }  <br>
+                        else  <br>
+                        {  <br>
+                            ++i;  <br> 
+                            continue;  <br>
+                        }   <br>
+                    }  <br>
+                    System.out.println("Pallindrom");  <br>
+                    
+                }  <br>
+            
+            }  <br>
+            <br>
+          </div>
+          <p id="answer"> The output of the above code: </p>
+      <div class="result">
+        Not Pallindrom
+      </div>
+          <br><br>
+
+          <h2 id="question">2)  Write a java program for string which is Anagram or not.</h2>
+          
+               <div class="program">
+                import java.util.Arrays; <br><br>
+
+                public class annagram { <br>
+                public static void main(String args[]) <br>
+                {  <br>
+                String x="brillence center"; <br>
+                String y="brillence centre";  <br> <br>
+                
+                x=x.replace(" ",""); <br>
+                y=y.replace(" ",""); <br>
+                 <br>
+                x=x.toLowerCase(); <br>
+                y=y.toLowerCase(); <br>
+                
+                char a[]=x.toCharArray(); <br>
+                char b[]=y.toCharArray(); <br>
+                <br>
+                  Arrays.sort(a); <br>
+                  Arrays.sort(b); <br>
+                  <br>
+                  Boolean result= Arrays.equals(a, b); <br>
+                  if(result==true) <br>
+                  { <br>
+                      System.out.println("This is ANAGRAM"); <br>
+                   
+                       <br>
+                  } <br>
+                  else <br>
+                  { <br>
+                      System.out.println("it is notANAGRAM"); <br>
+                  } <br>
+                  
+                <br>
+                } <br>
+            }
+                <br>
+                
+              </div>
+              <p id="answer"> The output of the above code: </p>
+      <div class="result">
+      This is Anagram
+      </div>
+      <br><br>
+      <h2 id="question">3)  Write Factorial Program using loop in java?</h2>
+          
+      <div class="program">
+        class FactorialExample{    <br>
+            public static void main(String args[]){   <br>
+             int i,fact=1;   <br>
+             int number=5;//It is the number to calculate factorial     <br>
+             for(i=1;i<=number;i++){         <br>
+                 fact=fact*i; <br>
+             }    <br>
+             System.out.println("Factorial of "+number+" is: "+fact);     <br>
+            }  <br>
+           }  <br>
+     </div>
+     <p id="answer"> The output of the above code: </p>
+<div class="result">
+    Factorial of 5 is: 120
+</div>
+<br><br>
+<h2 id="question">4)  write a java program to check whether the given number is armstrong number or not.</h2>
+          
+<div class="program">
+    class ArmstrongExample{   <br>
+        public static void main(String[] args)  {   <br>
+          int c=0,a,temp;   <br>
+          int n=153;//It is the number to check armstrong   <br>
+          temp=n;   <br>
+          while(n>0)   <br>
+          {  <br>
+          a=n%10;  <br>
+          n=n/10;  <br>
+          c=c+(a*a*a);  <br>
+          }  <br>
+          if(temp==c)  <br>
+          System.out.println("armstrong number");    <br>
+          else   <br>
+              System.out.println("Not armstrong number");    <br>
+         }  <br>
+      }  <br>
+
+</div>
+<p id="answer"> The output of the above code: </p>
+<div class="result">
+    armstrong number
+</div>
+<br><br>
+<h2 id="question">5)  Write a java program to check prime number.</h2>
+          
+<div class="program">
+    public class PrimeExample{     <br>
+        public static void main(String args[]){     <br>
+         int i,m=0,flag=0;       <br>
+         int n=3;//it is the number to be checked    <br>
+         m=n/2;      <br>
+         if(n==0||n==1){   <br>
+          System.out.println(n+" is not prime number");     <br>  
+         }else{   <br>
+          for(i=2;i<=m;i++){       <br>
+           if(n%i==0){      <br>
+            System.out.println(n+" is not prime number");     <br> 
+            flag=1;      <br>
+            break;     <br> 
+           }      <br>
+          }   <br>   
+          if(flag==0)  { System.out.println(n+" is prime number"); }  <br>
+         }//end of else   <br>
+       }    <br>
+       }  <br>
+
+</div>
+<p id="answer"> The output of the above code: </p>
+<div class="result">
+    3 is prime number
+</div>
+<br><br>
+<h2 id="question">6)  Java Program to count the total number of characters in a string</h2>
+          
+<div class="program">
+    public class CountCharacter     <br>
+{    
+    public static void main(String[] args) {     <br>
+        String string = "The best of both worlds";   <br> 
+        int count = 0;     <br>
+            <br>
+        //Counts each character except space    <br>
+        for(int i = 0; i < string.length(); i++) {    <br> 
+            if(string.charAt(i) != ' ')    <br>
+                count++;     <br>
+        }    <br>
+            <br>
+        //Displays the total number of characters present in the given string     <br>
+        System.out.println("Total number of characters in a string: " + count);    <br> 
+    }    <br>
+}    <br>
+
+</div>
+<p id="answer"> The output of the above code: </p>
+<div class="result">
+    Total number of characters in a string: 19
+</div>
+
+<h2 id="question">7)  Java Program to count the total number of vowels and consonants in a string</h2>
+          
+<div class="program">
+
+    public class CountVowelConsonant {    <br>
+        public static void main(String[] args) {     <br>
+            <br>
+            //Counter variable to store the count of vowels and consonant      <br>
+            int vCount = 0, cCount = 0;      <br>
+            <br>
+            //Declare a string     <br> 
+            String str = "This is a really simple sentence";      <br>
+            <br>
+            //Converting entire string to lower case to reduce the comparisons      <br>
+            str = str.toLowerCase();      <br>
+            <br>
+            for(int i = 0; i < str.length(); i++) {      <br>
+                //Checks whether a character is a vowel      <br>
+                if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {     <br> 
+                    //Increments the vowel counter      <br>
+                    vCount++;    <br>  
+                }      <br>
+                //Checks whether a character is a consonant      <br>
+                else if(str.charAt(i) >= 'a' && str.charAt(i)<='z') {        <br>
+                    //Increments the consonant counter     <br> 
+                    cCount++;      <br>
+                }      <br>
+            }      <br>
+            System.out.println("Number of vowels: " + vCount);      <br>
+            System.out.println("Number of consonants: " + cCount);      <br>
+        }      <br>
+    }     <br>
+
+</div>
+<p id="answer"> The output of the above code: </p>
+<div class="result">
+    Number of vowels: 10 <br>
+    Number of consonants: 17 <br>
+</div>
+<br><br>
+<h2 id="question">8)  Java Program to remove all the white spaces from a string?</h2>
+          
+<div class="program">
+    public class removeWhiteSpace {    <br> 
+        public static void main(String[] args) {     <br> 
+            <br> 
+            String str1="Remove white spaces";     <br> 
+            <br> 
+            //Removes the white spaces using regex     <br> 
+            str1 = str1.replaceAll("\\s+", "");     <br> 
+            <br> 
+            System.out.println("String after removing all the white spaces : " + str1);     <br> 
+        }    <br>  
+    }    <br> 
+
+</div>
+<p id="answer"> The output of the above code: </p>
+<div class="result">
+    String after removing all the white spaces: Removewhitespaces
+</div>
+<br><br>
+<h2 id="question">9)  Java Program to swap two string variables without using third or temp variable.?</h2>
+          
+<div class="program">
+    public class SwapStrings      <br>
+    {      <br>
+        public static void main(String[] args) {      <br>
+            String str1 = "Good ", str2 = "morning ";      <br>
+             System.out.println("Strings before swapping: " + str1 + " " + str2);      <br>
+             <br>
+            //Concatenate both the string str1 and str2 and store it in str1      <br>
+            str1 = str1 + str2;      <br>
+            //Extract str2 from updated str1      <br>
+            str2 = str1.substring(0, (str1.length() - str2.length()));      <br>
+            //Extract str1 from updated str1      <br>
+            str1 = str1.substring(str2.length());      <br>
+            <br>
+            System.out.println("Strings after swapping: " + str1 + " " + str2);      <br>
+        }      <br>
+    }    <br>
+</div>
+<p id="answer"> The output of the above code: </p>
+<div class="result">
+    Strings before swapping: Good morning <br>
+    Strings after swapping: morning Good  <br>
+</div>
+<br><br>
+<h2 id="question">10) Java Program to separate the Individual Characters from a String?</h2>
+          
+<div class="program">
+    public class IndividualCharacters  <br> 
+    {   <br> 
+        public static void main(String[] args) {   <br> 
+            String string = "characters ";   <br> 
+            <br> 
+            //Displays individual characters from given string   <br> 
+            System.out.println("Individual characters from given string: ");   <br> 
+            <br> 
+            //Iterate through the string and display individual character   <br> 
+            for(int i = 0; i < string.length(); i++){   <br> 
+                System.out.print(string.charAt(i) + " ");   <br> 
+            }   <br> 
+        }   <br> 
+    }   <br> 
+</div>
+<p id="answer"> The output of the above code: </p>
+<div class="result">
+    Individual characters from given string: <br>
+    c h a r a c t e r s
+</div>
+<br><br>
+
+<h2 id="question">11) Java program to find the duplicate characters in a string</h2>
+          
+<div class="program">
+    public static void main(String[] args) {    <br>
+        String string1 = "Great responsibility";  <br>  
+        int count;    <br>
+        <br>
+        //Converts given string into character array    <br>
+        char string[] = string1.toCharArray();    <br>
+        <br>
+        System.out.println("Duplicate characters in a given string: ");   <br> 
+        //Counts each character present in the string    <br>
+        for(int i = 0; i < string.length; i++) {    <br>
+            count = 1;    <br>
+            for(int j = i+1; j < string.length; j++) {    <br>
+                if(string[i] == string[j] && string[i] != ' ') {    <br>
+                    count++;    <br>
+                    //Set string[j] to 0 to avoid printing visited character    <br>
+                    string[j] = '0';    <br>
+                }    <br>
+            }    <br>
+            //A character is considered as duplicate if count is greater than 1    <br>
+            if(count > 1 && string[i] != '0')    <br>
+                System.out.println(string[i]);    <br>
+        }    <br>
+    }    <br>
+}<br>
+
+</div>
+<p id="answer"> The output of the above code: </p>
+<div class="result">
+    Duplicate characters in a given string: <br>
+    r  <br>
+    e  <br>
+    t   <br>
+    s   <br>
+    i   <br>
+</div>
+<br><br>
+
+
+
+            
+
+
+              
+
+        </section>
+
+       
+        <!-- <div class="center">
+          <div class="pagination">
+         
+          <a href="java1.html">1</a>
+          <a href="java2.html">2</a>
+          <a href="java3.html">3</a>
+     
+          </div>
+        </div> -->
+
+        <footer>
+          <div class="center">
+              Copyright &copy; www.taiyari.com. All right reserved
+          </div>
+      </footer>
+		
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hislide.js" ></script>
+		<script>
+			$('.slide').hiSlide();
+		</script>
+	</body>
+    
+</html>
